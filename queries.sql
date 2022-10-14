@@ -11,7 +11,7 @@ SELECT * FROM Customers where city in ('London', 'Madrid','Brazil') order by cus
 -- Add a customer record for "The Shire", the contact name is "Bilbo Baggins" the address is -"1 Hobbit-Hole" in "Bag End", postal code "111" and the country is "Middle Earth"
 insert into customers (customername, contactname, address, city, postalcode, country) values ("Alfredo Ramos Sex Shop", "Alfredo Ramos", "Avda. de la Constitucion 2426", "Mexico D.F.", "05024", "Mexico"); 
 -- Update Bilbo Baggins record so that the postal code changes to "11122"
-
+update customers set postalcode = '696969' where contactname = 'Alfredo Ramos';
 -- (Stretch) Find a query to discover how many different cities are stored in the Customers table. Repeats should not be double counted
 
 -- (Stretch) Find all suppliers who have names longer than 20 characters. You can use `length(SupplierName)` to get the length of the name
